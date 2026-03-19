@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/assets/fonts/PlusJakartaSans.woff2") format("woff2");
+  font-weight: 300 700;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --radius: 1rem;
+
+    /* Deep navy #1F3655 */
+    --primary: 0.27 0.072 255;
+    --primary-foreground: 0.98 0 0;
+
+    /* Light gray-blue page bg #F3F6F8 */
+    --background: 0.965 0.008 248;
+    --foreground: 0.17 0.018 255;
+
+    /* White cards */
+    --card: 1 0 0;
+    --card-foreground: 0.17 0.018 255;
+
+    --popover: 1 0 0;
+    --popover-foreground: 0.17 0.018 255;
+
+    /* Muted gray */
+    --secondary: 0.96 0.006 248;
+    --secondary-foreground: 0.37 0.018 255;
+
+    --muted: 0.96 0.006 248;
+    --muted-foreground: 0.57 0.01 255;
+
+    --accent: 0.96 0.006 248;
+    --accent-foreground: 0.27 0.072 255;
+
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+
+    --border: 0.91 0.008 248;
+    --input: 0.91 0.008 248;
+    --ring: 0.27 0.072 255;
+
+    /* Language card accents */
+    --spanish: 0.77 0.12 65;
+    --french: 0.54 0.13 260;
+    --japanese: 0.74 0.09 35;
+    --punjabi: 0.55 0.1 155;
+    --german: 0.55 0.1 285;
+    --mandarin: 0.6 0.12 20;
+    --italian: 0.65 0.14 30;
+    --portuguese: 0.6 0.1 195;
+    --arabic: 0.7 0.11 100;
+    --hindi: 0.65 0.13 50;
+
+    /* Chart */
+    --chart-1: 0.77 0.12 65;
+    --chart-2: 0.54 0.13 260;
+    --chart-3: 0.55 0.1 155;
+    --chart-4: 0.74 0.09 35;
+    --chart-5: 0.65 0.1 285;
+
+    --sidebar: 0.27 0.072 255;
+    --sidebar-foreground: 0.98 0 0;
+    --sidebar-primary: 0.98 0 0;
+    --sidebar-primary-foreground: 0.27 0.072 255;
+    --sidebar-accent: 0.32 0.072 255;
+    --sidebar-accent-foreground: 0.98 0 0;
+    --sidebar-border: 0.35 0.06 255;
+    --sidebar-ring: 0.55 0.072 255;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
